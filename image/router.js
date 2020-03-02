@@ -9,11 +9,11 @@ router.get("/image", (req, res, next) => {
     .catch(next);
 });
 
-// router.post("/event", (req, res, next) => {
-//   Event.create(req.body)
-//     .then(result => res.json(result))
-//     .catch(next);
-// });
+router.post("/image", (req, res, next) => {
+  Image.create(req.body)
+    .then(image => res.json(image))
+    .catch(next);
+});
 
 // router.get("/event/:id", (req, res, next) =>
 //   Event.findByPk(req.params.id)
