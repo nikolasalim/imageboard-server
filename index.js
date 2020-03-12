@@ -5,7 +5,7 @@ const cors = require("cors");
 const bodyParser = require("body-parser");
 const imageRouter = require("./image/router");
 const authRouter = require("./auth/router");
-const userRouter = require("./image/user/router");
+const userRouter = require("./user/router");
 
 const corsMiddleware = cors();
 app.use(corsMiddleware);
