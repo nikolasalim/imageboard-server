@@ -25,14 +25,3 @@ Image.belongsTo(User);
 User.hasMany(Image);
 
 module.exports = User;
-
-// Establish relationships
-
-// child belongs to parent
-// adds a familyId field to the species table
-// Species.belongsTo(Family); // both are classses
-
-// parent has many children
-// enables inclusion when finding
-// adds species array property when finding
-// Family.hasMany(Species); // both are classes
