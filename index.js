@@ -6,6 +6,7 @@ const bodyParser = require("body-parser");
 const imageRouter = require("./image/router");
 const authRouter = require("./auth/router");
 const userRouter = require("./user/router");
+const commentRouter = require("./comment/router");
 
 const corsMiddleware = cors();
 app.use(corsMiddleware);
@@ -16,5 +17,6 @@ app.use(parserMiddleware);
 app.use(imageRouter);
 app.use(authRouter);
 app.use(userRouter);
+app.use(commentRouter);
 
 app.listen(port, () => console.log(`Listening on port ${port}!`));
